@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Python-Client
+  description: This is a dummy Python app
+  tags:
+    - python
+    - web
+spec:
+  type: website
+  lifecycle: experimental
+  owner: user:guest
+  consumesApis:
+    - api:blog-api
+  dependsOn:
+    - component:Blog-App
